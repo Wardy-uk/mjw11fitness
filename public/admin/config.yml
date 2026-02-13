@@ -1,0 +1,121 @@
+backend:
+  name: git-gateway
+  branch: main
+
+local_backend: false
+publish_mode: simple
+media_folder: "public/images/uploads"
+public_folder: "/images/uploads"
+
+collections:
+  - name: "site_content"
+    label: "Site Content"
+    files:
+      - label: "Main Content"
+        name: "main_content"
+        file: "src/data/site-content.json"
+        format: "json"
+        editor:
+          preview: false
+        fields:
+          - label: "Site"
+            name: "site"
+            widget: "object"
+            fields:
+              - { label: "Business Name", name: "name", widget: "string" }
+              - { label: "Tagline", name: "tagline", widget: "string" }
+              - { label: "Instagram URL", name: "instagramUrl", widget: "string" }
+              - { label: "Footer Disclaimer", name: "footerDisclaimer", widget: "text" }
+          - label: "Home Coach-First"
+            name: "homeCoachFirst"
+            widget: "object"
+            fields:
+              - { label: "Kicker", name: "kicker", widget: "string" }
+              - { label: "Headline", name: "headline", widget: "string" }
+              - { label: "Intro", name: "intro", widget: "text" }
+              - { label: "Hero Image", name: "heroImage", widget: "image" }
+              - label: "Metrics"
+                name: "metrics"
+                widget: "list"
+                fields:
+                  - { label: "Value", name: "value", widget: "string" }
+                  - { label: "Label", name: "label", widget: "string" }
+              - { label: "About Kicker", name: "aboutKicker", widget: "string" }
+              - { label: "About Headline", name: "aboutHeadline", widget: "string" }
+              - { label: "About Text", name: "aboutText", widget: "text" }
+              - { label: "About Image", name: "aboutImage", widget: "image" }
+              - { label: "What You Get Title", name: "whatYouGetTitle", widget: "string" }
+              - { label: "What You Get Intro", name: "whatYouGetIntro", widget: "text" }
+          - label: "Programs"
+            name: "programs"
+            widget: "object"
+            fields:
+              - { label: "Kicker", name: "kicker", widget: "string" }
+              - { label: "Headline", name: "headline", widget: "string" }
+              - { label: "Intro", name: "intro", widget: "text" }
+              - label: "Program Cards"
+                name: "items"
+                widget: "list"
+                fields:
+                  - { label: "Title", name: "title", widget: "string" }
+                  - { label: "Description", name: "description", widget: "text" }
+                  - { label: "Image", name: "image", widget: "image" }
+          - label: "Results"
+            name: "results"
+            widget: "object"
+            fields:
+              - { label: "Kicker", name: "kicker", widget: "string" }
+              - { label: "Headline", name: "headline", widget: "string" }
+              - { label: "Intro", name: "intro", widget: "text" }
+              - label: "Result Images"
+                name: "images"
+                widget: "list"
+                field: { label: "Image", name: "image", widget: "image" }
+              - label: "Testimonials"
+                name: "testimonials"
+                widget: "list"
+                field: { label: "Quote", name: "quote", widget: "string" }
+          - label: "Results-First Variant"
+            name: "resultsFirst"
+            widget: "object"
+            fields:
+              - { label: "Kicker", name: "kicker", widget: "string" }
+              - { label: "Headline", name: "headline", widget: "string" }
+              - { label: "Intro", name: "intro", widget: "text" }
+              - { label: "How It Works Title", name: "howItWorksTitle", widget: "string" }
+              - label: "How It Works Cards"
+                name: "howItWorksCards"
+                widget: "list"
+                fields:
+                  - { label: "Title", name: "title", widget: "string" }
+                  - { label: "Description", name: "description", widget: "text" }
+                  - { label: "Image", name: "image", widget: "image" }
+          - label: "About"
+            name: "about"
+            widget: "object"
+            fields:
+              - { label: "Kicker", name: "kicker", widget: "string" }
+              - { label: "Headline", name: "headline", widget: "string" }
+              - label: "Paragraphs"
+                name: "paragraphs"
+                widget: "list"
+                field: { label: "Paragraph", name: "paragraph", widget: "text" }
+              - { label: "Image", name: "image", widget: "image" }
+          - label: "Contact"
+            name: "contact"
+            widget: "object"
+            fields:
+              - { label: "Kicker", name: "kicker", widget: "string" }
+              - { label: "Headline", name: "headline", widget: "string" }
+              - { label: "Intro", name: "intro", widget: "text" }
+              - { label: "Form Name", name: "formName", widget: "string" }
+              - { label: "Submit Button Label", name: "submitLabel", widget: "string" }
+          - label: "Privacy"
+            name: "privacy"
+            widget: "object"
+            fields:
+              - { label: "Headline", name: "headline", widget: "string" }
+              - label: "Paragraphs"
+                name: "paragraphs"
+                widget: "list"
+                field: { label: "Paragraph", name: "paragraph", widget: "text" }

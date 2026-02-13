@@ -1,8 +1,12 @@
+---
+import content from "../data/site-content.json";
+---
+
 <header class="site-header">
   <div class="container header-inner">
     <a class="brand" href="/">
-      <div class="brand-name">Matt Ward Coaching</div>
-      <p class="brand-tagline">Online fitness coaching</p>
+      <div class="brand-name">{content.site.name}</div>
+      <p class="brand-tagline">{content.site.tagline}</p>
     </a>
 
     <nav class="nav" aria-label="Main navigation">
@@ -11,7 +15,7 @@
       <a href="/results/">Results</a>
       <a href="/about/">About</a>
       <a href="/contact/">Contact</a>
-      <a class="nav-cta" href="https://www.instagram.com/mattwardcoaching11/" target="_blank" rel="noopener noreferrer">Instagram DM</a>
+      <a class="nav-cta" href={content.site.instagramUrl} target="_blank" rel="noopener noreferrer">Instagram DM</a>
     </nav>
   </div>
 </header>

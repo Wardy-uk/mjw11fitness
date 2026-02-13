@@ -1,13 +1,17 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
+import content from "../data/site-content.json";
+
+const privacy = content.privacy;
 ---
 
-<BaseLayout title="Matt Ward Coaching | Privacy" description="Privacy and data handling information for Matt Ward Coaching.">
+<BaseLayout title={`${content.site.name} | Privacy`} description={privacy.paragraphs[0]}>
   <div class="container page-grid">
     <section class="card">
-      <h1>Privacy</h1>
-      <p class="page-intro">This site uses Netlify Forms to receive coaching enquiries submitted through the contact page.</p>
-      <p class="page-intro">Submitted details are used only to respond to enquiries and are not sold to third parties.</p>
+      <h1>{privacy.headline}</h1>
+      {privacy.paragraphs.map((paragraph) => (
+        <p class="page-intro">{paragraph}</p>
+      ))}
     </section>
   </div>
 </BaseLayout>

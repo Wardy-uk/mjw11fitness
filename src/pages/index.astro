@@ -1,68 +1,54 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
+import content from "../data/site-content.json";
+
+const home = content.homeCoachFirst;
+const programs = content.programs;
 ---
 
-<BaseLayout title="Matt Ward Coaching | Home" description="Online fitness coaching for fat loss, strength, and sustainable results.">
+<BaseLayout title={`${content.site.name} | Home`} description={home.intro}>
   <div class="container page-grid">
     <section class="hero">
       <div>
-        <p class="kicker">Coach-Led Online Coaching</p>
-        <h1>Work 1:1 With Matt Ward</h1>
-        <p>
-          You get direct coaching built around your schedule, your training level, and your goal. No generic programs, no guesswork.
-        </p>
+        <p class="kicker">{home.kicker}</p>
+        <h1>{home.headline}</h1>
+        <p>{home.intro}</p>
         <div class="hero-actions">
           <a class="button" href="/contact/">Apply For Coaching</a>
-          <a class="button ghost" href="https://www.instagram.com/mattwardcoaching11/" target="_blank" rel="noopener noreferrer">Message On Instagram</a>
+          <a class="button ghost" href={content.site.instagramUrl} target="_blank" rel="noopener noreferrer">Message On Instagram</a>
         </div>
         <div class="metrics">
-          <div><strong>1:1</strong><span>coaching support</span></div>
-          <div><strong>Weekly</strong><span>progress check-ins</span></div>
-          <div><strong>Custom</strong><span>plans and habits</span></div>
+          {home.metrics.map((metric) => (
+            <div><strong>{metric.value}</strong><span>{metric.label}</span></div>
+          ))}
         </div>
       </div>
-      <img src="/images/hero-placeholder.svg" alt="Matt Ward coaching hero placeholder" />
+      <img src={home.heroImage} alt="Matt Ward coaching hero" />
     </section>
 
     <section class="card about-panel">
       <div>
-        <p class="kicker">About Matt</p>
-        <h2>Clear Plan. Consistent Execution.</h2>
-        <p class="page-intro">
-          Coaching focuses on structured training, practical nutrition, and weekly accountability so clients can make progress without extreme approaches.
-        </p>
+        <p class="kicker">{home.aboutKicker}</p>
+        <h2>{home.aboutHeadline}</h2>
+        <p class="page-intro">{home.aboutText}</p>
         <a class="button" href="/about/">Read The Coaching Approach</a>
       </div>
-      <img src="/images/about-placeholder.svg" alt="Coach about placeholder" />
+      <img src={home.aboutImage} alt="Coach about" />
     </section>
 
     <section class="card">
-      <h2>What You Get</h2>
-      <p class="page-intro">
-        Every coaching plan is tailored to your goal, training experience, and schedule. You get direct guidance, not generic templates.
-      </p>
+      <h2>{home.whatYouGetTitle}</h2>
+      <p class="page-intro">{home.whatYouGetIntro}</p>
       <div class="grid-3">
-        <article class="tile">
-          <img src="/images/program-1.svg" alt="Fat loss coaching placeholder" />
-          <div class="tile-body">
-            <h3>Fat Loss Coaching</h3>
-            <p>Sustainable fat loss with clear nutrition targets and gym structure.</p>
-          </div>
-        </article>
-        <article class="tile">
-          <img src="/images/program-2.svg" alt="Strength and muscle placeholder" />
-          <div class="tile-body">
-            <h3>Strength & Muscle</h3>
-            <p>Progressive plans to build strength, muscle, and better training confidence.</p>
-          </div>
-        </article>
-        <article class="tile">
-          <img src="/images/program-3.svg" alt="Accountability coaching placeholder" />
-          <div class="tile-body">
-            <h3>Accountability</h3>
-            <p>Weekly structure and support for consistency during busy weeks.</p>
-          </div>
-        </article>
+        {programs.items.map((item) => (
+          <article class="tile">
+            <img src={item.image} alt={item.title} />
+            <div class="tile-body">
+              <h3>{item.title}</h3>
+              <p>{item.description}</p>
+            </div>
+          </article>
+        ))}
       </div>
     </section>
 
