@@ -6,21 +6,30 @@
     "footerDisclaimer": "Results vary and depend on effort, consistency, training execution, and nutrition habits."
   },
   "homeCoachFirst": {
-    "kicker": "Coach-Led Online Coaching",
-    "headline": "Work 1:1 With Matt Ward",
-    "intro": "You get direct coaching built around your schedule, your training level, and your goal. No generic programs, no guesswork.",
-    "heroImage": "/images/hero-placeholder.svg",
-    "metrics": [
-      { "value": "1:1", "label": "coaching support" },
-      { "value": "Weekly", "label": "progress check-ins" },
-      { "value": "Custom", "label": "plans and habits" }
-    ],
     "aboutKicker": "About Matt",
     "aboutHeadline": "Clear Plan. Consistent Execution.",
-    "aboutText": "Coaching focuses on structured training, practical nutrition, and weekly accountability so clients can make progress without extreme approaches.",
+    "heroImage": "/images/uploads/matt1.png",
+    "metrics": [
+      {
+        "value": "1:1",
+        "label": "coaching support"
+      },
+      {
+        "value": "Weekly",
+        "label": "progress check-ins"
+      },
+      {
+        "value": "Custom",
+        "label": "plans and habits"
+      }
+    ],
+    "intro": "You get direct coaching built around your schedule, your training level, and your goal. No generic programs, no guesswork.",
     "aboutImage": "/images/about-placeholder.svg",
-    "whatYouGetTitle": "What You Get",
-    "whatYouGetIntro": "Every coaching plan is tailored to your goal, training experience, and schedule. You get direct guidance, not generic templates."
+    "whatYouGetIntro": "Every coaching plan is tailored to your goal, training experience, and schedule. You get direct guidance, not generic templates.",
+    "kicker": "Coach-Led Online Coaching",
+    "headline": "Work 1:1 With Matt Ward",
+    "aboutText": "Coaching focuses on structured training, practical nutrition, and weekly accountability so clients can make progress without extreme approaches.",
+    "whatYouGetTitle": "What You Get"
   },
   "programs": {
     "kicker": "Programs",
