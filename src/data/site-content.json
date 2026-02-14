@@ -1,7 +1,7 @@
 {
   "site": {
     "name": "Matt Ward Coaching",
-    "tagline": "Online fitness coaching",
+    "tagline": "Physique and Fat Loss Coaching",
     "instagramUrl": "https://www.instagram.com/mattwardcoaching11/",
     "footerDisclaimer": "Results vary and depend on effort, consistency, training execution, and nutrition habits."
   },
@@ -23,22 +23,22 @@
         "label": "plans and habits"
       }
     ],
-    "intro": "You get direct coaching built around your schedule, your training level, and your goal. No generic programs, no guesswork.",
+    "intro": "Physique and fat loss coaching with structured training, practical nutrition, and clear accountability. No generic plans, no guesswork.",
     "aboutImage": "/images/about-placeholder.svg",
     "whatYouGetIntro": "Every coaching plan is tailored to your goal, training experience, and schedule. You get direct guidance, not generic templates.",
-    "kicker": "Coach-Led Online Coaching",
+    "kicker": "Physique and Fat Loss Coaching",
     "headline": "Work 1:1 With Matt Ward",
-    "aboutText": "Coaching focuses on structured training, practical nutrition, and weekly accountability so clients can make progress without extreme approaches.",
+    "aboutText": "Matt coaches clients through physique and fat loss goals with simple structure, weekly check-ins, and realistic habits that are built to last.",
     "whatYouGetTitle": "What You Get"
   },
   "programs": {
     "kicker": "Programs",
     "headline": "Coaching Options",
-    "intro": "Choose the coaching path that matches your current goal. All options include direct support and regular check-ins.",
+    "intro": "Choose the coaching path that matches your current goal. Every option includes direct support and regular check-ins.",
     "items": [
       {
-        "title": "Fat Loss Coaching",
-        "description": "Sustainable fat loss with clear nutrition targets and gym structure.",
+        "title": "Physique & Fat Loss",
+        "description": "Build a leaner physique with clear nutrition targets and structured gym sessions.",
         "image": "/images/program-1.svg"
       },
       {
@@ -56,7 +56,7 @@
   "results": {
     "kicker": "Results",
     "headline": "Client Progress",
-    "intro": "Placeholders below will be replaced by selected Instagram transformations and check-in screenshots.",
+    "intro": "Physique and fat loss progress examples and coaching check-in outcomes.",
     "images": [
       "/images/result-1.svg",
       "/images/result-2.svg",
@@ -96,15 +96,15 @@
     "kicker": "About",
     "headline": "Matt Ward Coaching",
     "paragraphs": [
-      "Coaching is built around realistic structure, clear feedback, and habits that work in real life. The focus is long-term progress, not short-term extremes.",
-      "You will know exactly what to do in the gym, how to approach nutrition, and how to adjust when life gets busy."
+      "Matt is based at PureGym Loughborough and coaches clients through physique and fat loss goals with a practical, no-nonsense approach.",
+      "He is Level 2 and Level 3 PT qualified, with a BSc (Hons) in Sports Coaching awarded by Loughborough University."
     ],
     "image": "/images/about-placeholder.svg"
   },
   "contact": {
     "kicker": "Contact",
     "headline": "Apply For Coaching",
-    "intro": "Fastest route is Instagram DM. You can also send details through the form below.",
+    "intro": "Fastest route is Instagram DM. You can also send details through the form below for physique and fat loss coaching enquiries.",
     "formName": "coaching-enquiry",
     "submitLabel": "Send Application"
   },
